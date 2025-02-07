@@ -26,7 +26,7 @@ public class MyController {
             n++;
         }
 
-        int start = n - 200;
+        int start = n - 20;
         int end = n-1;
         return "20 message sent to topic from : " + start + " to : " + end  ;
     }
