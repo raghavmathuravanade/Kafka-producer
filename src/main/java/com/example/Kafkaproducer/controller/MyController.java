@@ -18,7 +18,7 @@ public class MyController {
     @GetMapping(value = "/produce")
     public String send() throws InterruptedException {
         int i = 0;
-        while(i<200){
+        while(i<20){
             topicProducer.send("message number : " + n, n);
 //            Thread.sleep(1000);
             log.info("message number : " + n + " sent to topic");
