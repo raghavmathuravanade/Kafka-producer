@@ -15,8 +15,8 @@ public class TopicProducer {
 
     public void send(String message, int key){
 
-//        kafkaTemplate.send(topicName, key, message);
-        kafkaTemplate.send(topicName, message);
+        kafkaTemplate.send(topicName, key, message);
+//        kafkaTemplate.send(topicName, message);
 
     }
 }
