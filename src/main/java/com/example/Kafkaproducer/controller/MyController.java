@@ -18,15 +18,15 @@ public class MyController {
     @GetMapping(value = "/produce")
     public String send() throws InterruptedException {
         int i = 0;
-        while(i<20){
+        while(i<200){
             topicProducer.send("message number : " + n, n);
-            Thread.sleep(1000);
+//            Thread.sleep(1000);
             log.info("message number : " + n + " sent to topic");
             i++;
             n++;
         }
 
-        int start = n - 20;
+        int start = n - 200;
         int end = n-1;
         return "20 message sent to topic from : " + start + " to : " + end  ;
     }
