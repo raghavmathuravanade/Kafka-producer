@@ -20,7 +20,7 @@ public class MyController {
         int i = 0;
         while(i<20){
             topicProducer.send("message number : " + n, n);
-            Thread.sleep(1000);
+//            Thread.sleep(1000);
             log.info("message number : " + n + " sent to topic");
             i++;
             n++;
